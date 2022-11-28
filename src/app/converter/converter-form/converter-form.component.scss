@@ -1,0 +1,81 @@
+@import '../../../variables.scss';
+
+.converter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    input, select {
+        width: 80%;
+        height: 15%;
+        font-size: 2rem;
+        margin: 2vw;
+        border-radius: .5rem;
+        border: $mainBorder;
+        padding: .5rem;
+        &:focus {
+            transition: border-color .2s;
+            outline: none;
+            border-color: $highlightedColor;
+            border-style: solid;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .converter-form {
+        input, select {
+            width: 50vw;
+            height: 15%;
+            font-size: 1.8rem;
+            margin: 1vw;
+            border-radius: .5rem;
+            border: $mainBorder;
+            padding: .2rem;
+            &:focus {
+                transition: border-color .2s;
+                outline: none;
+                border-color: $highlightedColor;
+                border-style: solid;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .converter-form {
+        input, select {
+            width: 70vw;
+            height: 15%;
+            font-size: 2rem;
+            margin: 1vw;
+            border-radius: .5rem;
+            border: $mainBorder;
+            padding: .2rem;
+            &:focus {
+                transition: border-color .2s;
+                outline: none;
+                border-color: $highlightedColor;
+                border-style: solid;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .converter-form {
+        input, select {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .converter-form {
+        input, select {
+            font-size: 1.6rem;
+        }
+    }
+}

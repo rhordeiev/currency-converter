@@ -1,0 +1,6 @@
+<form action="" class="converter-form">
+    <input type="number" min="0" max="1000000000" [value]="currencyValue" (input)="onChange();" name="input" #input>
+    <select name="select" id=""  [value]="selectValue" (change)="onChange();" #select>
+        <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+    </select>
+</form>

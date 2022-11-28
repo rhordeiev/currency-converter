@@ -1,0 +1,9 @@
+<header>
+    <ng-container *ngFor="let currency of currencies; last as isLast">
+        <div class="currency-element">
+            <span class="currency-element-name">{{currency.name}}: </span>
+            <span class="currency-element-value">{{currency.value}}</span>
+        </div>
+        <span class="currency-delimiter" *ngIf="!isLast">/</span>
+    </ng-container>
+</header>

@@ -1,0 +1,13 @@
+<main>
+    <div class="converter-block">
+        <div class="converter-header">Enter your values</div>
+        <div class="converter-forms">
+            <app-converter-form [first]="true" (onInputChange)="onFirstInputChange($event)" 
+            [currencyValue]="isFirstInputTriggered ? inputValue : resultValue"
+            [selectValue]="firstSelectValue"></app-converter-form>
+            <app-converter-form [first]="false" (onInputChange)="onSecondInputChange($event)" 
+            [currencyValue]="isLastInputTriggered ? inputValue : resultValue"
+            [selectValue]="lastSelectValue"></app-converter-form>
+        </div>
+    </div>
+</main>

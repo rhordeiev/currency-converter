@@ -1,0 +1,98 @@
+@import '../../variables.scss';
+
+main {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    .converter-block {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 60vh;
+        justify-content: space-around;
+        align-items: center;
+        border: $mainBorder;
+        border-radius: 1rem;
+        .converter-header {
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: $highlightedColor;
+            border: $mainBorder;
+            border-top: none;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            position: relative;
+            padding: 0 2vw;
+            bottom: .1rem;
+        }
+        .converter-forms {
+            display: flex;
+            height: 80%;
+            align-items: center;
+            app-converter-form {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        .converter-block {
+            width: 60vw;
+            .converter-header {
+                font-size: 2rem;
+            }
+            .converter-forms {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 80vh;
+                width: 80vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        .converter-block {
+            width: 80vw;
+            .converter-header {
+                font-size: 2.2rem;
+            }
+            .converter-forms {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 80vh;
+                width: 80vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        .converter-block {
+            .converter-header {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main {
+        .converter-block {
+            .converter-header {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
